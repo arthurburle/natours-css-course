@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0; /* BASIC SETUP */
+  padding: 0; /* BASIC SETUP */
+  box-sizing: inherit; /* BASIC SETUP */
+}
+
+html {
+  // Defines what 1rem is
+  font-size: 62.5%; /* BASIC SETUP */
+}
+
+body {
+  box-sizing: border-box;
+}
