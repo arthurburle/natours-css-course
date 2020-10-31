@@ -8,7 +8,19 @@
 
 html {
   // Defines what 1rem is
-  font-size: 62.5%; /* BASIC SETUP */
+  font-size: 62.5%; /* BASIC SETUP */ // 1 rem = 10px, 10/16 = 62.5%
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  } // Apenas o último é aplicado se os dois têm suas condições satisfeitas, então o menor tem que vir por último
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12, 12/16 = 75%
+  }
 }
 
 body {

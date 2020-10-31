@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*
+0 - 600px: Phone
+600px - 900px: Tablet portrait
+900px - 1200px: Tablet landscape
+1200px - 1800px: Normal style
+1800px + : Big desktop
+
+Breakpoint argument choices:
+- phone
+- tap-port
+- tap-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -12,6 +25,15 @@
 html {
   font-size: 62.5%;
   /* BASIC SETUP */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
